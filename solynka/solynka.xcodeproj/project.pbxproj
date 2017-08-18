@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D6ED07751B0D23C313EFA9 /* Pods_solynka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DACB179E5F7B530F49F29C5 /* Pods_solynka.framework */; };
 		FF9304441EB13B81003BE193 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9304431EB13B81003BE193 /* AppDelegate.swift */; };
 		FF9304461EB13B81003BE193 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9304451EB13B81003BE193 /* ViewController.swift */; };
 		FF9304491EB13B81003BE193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9304471EB13B81003BE193 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7DACB179E5F7B530F49F29C5 /* Pods_solynka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_solynka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31FB5F6B5BC1AA7997EFB75 /* Pods-solynka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solynka.release.xcconfig"; path = "Pods/Target Support Files/Pods-solynka/Pods-solynka.release.xcconfig"; sourceTree = "<group>"; };
+		CC86BA67C4CC8435B792D1FF /* Pods-solynka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-solynka.debug.xcconfig"; path = "Pods/Target Support Files/Pods-solynka/Pods-solynka.debug.xcconfig"; sourceTree = "<group>"; };
 		FF9304401EB13B81003BE193 /* solynka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = solynka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9304431EB13B81003BE193 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9304451EB13B81003BE193 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D6ED07751B0D23C313EFA9 /* Pods_solynka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B7F56F870A50865EDBC64E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC86BA67C4CC8435B792D1FF /* Pods-solynka.debug.xcconfig */,
+				A31FB5F6B5BC1AA7997EFB75 /* Pods-solynka.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EFA1B98055E10679F052B886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DACB179E5F7B530F49F29C5 /* Pods_solynka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF9304371EB13B81003BE193 = {
 			isa = PBXGroup;
 			children = (
 				FF9304421EB13B81003BE193 /* solynka */,
 				FF9304411EB13B81003BE193 /* Products */,
+				3B7F56F870A50865EDBC64E5 /* Pods */,
+				EFA1B98055E10679F052B886 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF9304521EB13B81003BE193 /* Build configuration list for PBXNativeTarget "solynka" */;
 			buildPhases = (
+				D651795DC30C8919DE2C8615 /* [CP] Check Pods Manifest.lock */,
 				FF93043C1EB13B81003BE193 /* Sources */,
 				FF93043D1EB13B81003BE193 /* Frameworks */,
 				FF93043E1EB13B81003BE193 /* Resources */,
+				F7C886F59E42F5538823A7EF /* [CP] Embed Pods Frameworks */,
+				28C415A046604B602AF5D2E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28C415A046604B602AF5D2E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-solynka/Pods-solynka-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D651795DC30C8919DE2C8615 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-solynka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7C886F59E42F5538823A7EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-solynka/Pods-solynka-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WCLShineButton/WCLShineButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WCLShineButton.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-solynka/Pods-solynka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FF93043C1EB13B81003BE193 /* Sources */ = {
@@ -258,6 +339,7 @@
 		};
 		FF9304531EB13B81003BE193 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC86BA67C4CC8435B792D1FF /* Pods-solynka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = solynka/Info.plist;
@@ -270,6 +352,7 @@
 		};
 		FF9304541EB13B81003BE193 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31FB5F6B5BC1AA7997EFB75 /* Pods-solynka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = solynka/Info.plist;
