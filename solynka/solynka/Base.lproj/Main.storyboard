@@ -32,7 +32,6 @@
                             </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Назва треку" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ueU-rE-Dvi">
                                 <rect key="frame" x="15" y="406" width="290" height="30"/>
-                                <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="GAO-vj-Xbd"/>
                                 </constraints>
@@ -47,45 +46,59 @@
                                     <constraint firstAttribute="width" secondItem="gz3-bI-6TI" secondAttribute="height" multiplier="5:6" id="pNw-wJ-DQ0"/>
                                 </constraints>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pTT-NA-JcM">
-                                <rect key="frame" x="91" y="351" width="148" height="31"/>
-                                <color key="minimumTrackTintColor" red="0.92941176470588238" green="0.72941176470588232" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="thumbTintColor" red="0.92941176469999998" green="0.72941176470000002" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.80000000000000004" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pTT-NA-JcM">
+                                <rect key="frame" x="73" y="351" width="174" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.93333333333333335" green="0.54117647058823526" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.93333333330000001" green="0.54117647059999996" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="changeVolume:" destination="BYZ-38-t0r" eventType="valueChanged" id="AlM-94-24d"/>
+                                </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvc-7n-jRx">
-                                <rect key="frame" x="79.5" y="146" width="170" height="170"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pvc-7n-jRx">
+                                <rect key="frame" x="110" y="216" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="PID-ZD-amW"/>
-                                    <constraint firstAttribute="width" constant="170" id="cGR-rT-hZq"/>
+                                    <constraint firstAttribute="height" constant="100" id="PID-ZD-amW"/>
+                                    <constraint firstAttribute="width" constant="100" id="cGR-rT-hZq"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oMy-67-CI3"/>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9K-ma-UaA"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pTT-NA-JcM" firstAttribute="leading" secondItem="gz3-bI-6TI" secondAttribute="trailing" constant="28" id="0GE-Rt-wwU"/>
+                            <constraint firstItem="pTT-NA-JcM" firstAttribute="leading" secondItem="gz3-bI-6TI" secondAttribute="trailing" constant="10" id="0GE-Rt-wwU"/>
                             <constraint firstItem="ueU-rE-Dvi" firstAttribute="top" secondItem="gz3-bI-6TI" secondAttribute="bottom" constant="10" id="4zs-qV-T9h"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pTT-NA-JcM" secondAttribute="trailing" constant="67" id="Cld-Fx-bNO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pTT-NA-JcM" secondAttribute="trailing" priority="999" constant="67" id="Cld-Fx-bNO"/>
                             <constraint firstItem="pTT-NA-JcM" firstAttribute="centerY" secondItem="gz3-bI-6TI" secondAttribute="centerY" id="GEM-zZ-Vii"/>
                             <constraint firstAttribute="trailing" secondItem="ueU-rE-Dvi" secondAttribute="trailing" constant="15" id="Kn5-el-eWK"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EWf-Fv-Nqq" secondAttribute="bottom" constant="35" id="V2j-xs-ivP"/>
                             <constraint firstItem="Pvc-7n-jRx" firstAttribute="centerX" secondItem="pTT-NA-JcM" secondAttribute="centerX" id="asa-Vp-2vd"/>
                             <constraint firstItem="ueU-rE-Dvi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="cKe-ek-EsP"/>
+                            <constraint firstItem="Pvc-7n-jRx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f1s-Ql-302"/>
                             <constraint firstItem="EWf-Fv-Nqq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f3N-uC-eWp"/>
                             <constraint firstItem="EWf-Fv-Nqq" firstAttribute="top" secondItem="ueU-rE-Dvi" secondAttribute="bottom" constant="40" id="hUx-MV-Y8o"/>
                             <constraint firstItem="gz3-bI-6TI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="owP-5E-F0j"/>
                             <constraint firstItem="pTT-NA-JcM" firstAttribute="top" secondItem="Pvc-7n-jRx" secondAttribute="bottom" constant="35" id="vsa-LV-zfC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Cld-Fx-bNO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="RH7-gX-211"/>
                     <connections>
+                        <outlet property="buttonPlay" destination="Pvc-7n-jRx" id="O8e-AR-c2X"/>
                         <outlet property="heightHeart" destination="wEA-E8-THQ" id="x9A-yi-Erg"/>
                         <outlet property="heightNameSong" destination="GAO-vj-Xbd" id="ZNa-Ah-jZy"/>
                         <outlet property="heightSoundImage" destination="IQ8-vt-s3W" id="bhn-Nj-c5C"/>
+                        <outlet property="slider" destination="pTT-NA-JcM" id="8Im-C0-kw7"/>
+                        <outlet property="sliderRightConstraint" destination="Cld-Fx-bNO" id="g0O-Ju-TCg"/>
+                        <outlet property="sliderToSound" destination="0GE-Rt-wwU" id="kWb-f2-Weq"/>
+                        <outlet property="sound" destination="gz3-bI-6TI" id="eg9-VQ-USY"/>
+                        <outlet property="soundLeftConstraint" destination="owP-5E-F0j" id="5ye-Xr-YZY"/>
                         <outlet property="viewForHeart" destination="EWf-Fv-Nqq" id="JIH-iw-eXc"/>
                     </connections>
                 </viewController>
