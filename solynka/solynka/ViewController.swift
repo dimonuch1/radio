@@ -44,6 +44,16 @@ class ViewController: UIViewController {
             
         }
     }
+    
+//menu constraint
+    
+    var menuOpen = false
+    
+    @IBOutlet weak var leadingMenu: NSLayoutConstraint!
+    
+    @IBOutlet weak var menuView: UIView!
+    
+    
 //button play
     @IBOutlet weak var buttonPlay: UIButton!
     
@@ -60,6 +70,15 @@ class ViewController: UIViewController {
     
     
     func setConstraints() {
+        //main view
+        let swipeRightMainView = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMainView))
+        let swipeLeftMainView = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMainView))
+        swipeRightMainView.direction = UISwipeGestureRecognizerDirection.right
+        swipeLeftMainView.direction = UISwipeGestureRecognizerDirection.left
+        self.view.addGestureRecognizer(swipeRightMainView)
+        self.view.addGestureRecognizer(swipeLeftMainView)
+        
+        //other
         heightHeart.constant    = self.view.bounds.height * 0.1
         heightNameSong.constant = self.view.bounds.height * 0.05
         //buttonPlay.setBackgroundImage(UIImage(named:"play"), for: .normal)
@@ -70,6 +89,15 @@ class ViewController: UIViewController {
     
         soundLeftConstraint.constant   = self.view.bounds.width * 0.1
         slider.widthAnchor.constraint(equalToConstant: soundLeftConstraint.constant + heightSoundImage.constant + sliderToSound.constant)
+        
+        //menu
+        leadingMenu.constant = -self.view.bounds.width
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMenuView))
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.left
+        self.menuView.addGestureRecognizer(swipeLeft)
+        
+        
+        
         view.layoutIfNeeded()
         view.setNeedsLayout()
     }
@@ -77,6 +105,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setConstraints()
+        
         
         UIApplication.shared.statusBarStyle = .lightContent
         navigationController?.navigationBar.barTintColor = UIColor.black
@@ -123,7 +152,7 @@ class ViewController: UIViewController {
     }
     
     func changeImageButtonPlay(_ play:Bool) {
-        UIView.animate(withDuration: 2) {
+        UIView.animate(withDuration: 1) {
             self.buttonPlay.alpha = 0
             if !play {
                 self.buttonPlay.setBackgroundImage(UIImage(named:"play"), for: .normal)
@@ -163,8 +192,77 @@ class ViewController: UIViewController {
             self.sound.image = UIImage(named: "sound")
             slider.value = 0.8
         }
-        
     }
     
+    
+    @IBAction func OpenMenu(_ sender: UIBarButtonItem) {
+        openCloseMenu()
+    }
+    
+    func openCloseMenu() {
+        //DispatchQueue.main.async(execute: {
+                if self.menuOpen {
+                    self.leadingMenu.constant = -self.menuView.frame.width
+                    UIView.animate(withDuration: 0.5, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                } else {
+                    self.leadingMenu.constant = 0
+                    UIView.animate(withDuration: 1, animations: {
+                        self.view.layoutIfNeeded()
+                    })
+                }
+                self.menuOpen = !self.menuOpen
+            //})
+        }
+    func openMenu()
+    {
+        self.leadingMenu.constant = 0
+        UIView.animate(withDuration: 1, animations: {
+            self.view.layoutIfNeeded()
+            self.menuOpen = !self.menuOpen
+        })
+
+    }
+    
+    func closeMenu() {
+        self.leadingMenu.constant = -self.menuView.frame.width
+        UIView.animate(withDuration: 0.5, animations: {
+            self.view.layoutIfNeeded()
+            self.menuOpen = !self.menuOpen
+        })
+    }
+    
+    
+    
+    func respondToSwipeGestureForMenuView(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right: break
+            case UISwipeGestureRecognizerDirection.down:  break
+            case UISwipeGestureRecognizerDirection.left:
+                closeMenu()
+            case UISwipeGestureRecognizerDirection.up:    break
+            default: break
+            }
+        }
+    }
+    
+    
+    func respondToSwipeGestureForMainView(gesture: UIGestureRecognizer) {
+        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            switch swipeGesture.direction {
+            case UISwipeGestureRecognizerDirection.right:
+                openMenu()
+            case UISwipeGestureRecognizerDirection.down: break
+            case UISwipeGestureRecognizerDirection.left:
+                closeMenu()
+            case UISwipeGestureRecognizerDirection.up:   break
+            default: break
+            }
+        }
+    }
+
+   
     
 }
