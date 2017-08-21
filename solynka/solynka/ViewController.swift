@@ -68,20 +68,23 @@ class ViewController: UIViewController {
     //var moviePlayer:MPMoviePlayerController!
     var player = AVPlayer()
     
-    
     func setConstraints() {
         //main view
-        let swipeRightMainView = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMainView))
-        let swipeLeftMainView = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMainView))
-        swipeRightMainView.direction = UISwipeGestureRecognizerDirection.right
-        swipeLeftMainView.direction = UISwipeGestureRecognizerDirection.left
-        self.view.addGestureRecognizer(swipeRightMainView)
-        self.view.addGestureRecognizer(swipeLeftMainView)
+//        let swipeRightMainView = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMainView))
+//        let swipeLeftMainView = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMainView))
+//        swipeRightMainView.direction = UISwipeGestureRecognizerDirection.right
+//        swipeLeftMainView.direction = UISwipeGestureRecognizerDirection.left
+//        self.view.addGestureRecognizer(swipeRightMainView)
+//        self.view.addGestureRecognizer(swipeLeftMainView)
+        //let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        //tap.delegate = self.view as! UIGestureRecognizerDelegate?
+        //self.view.addGestureRecognizer(tap)
+        
+        
         
         //other
         heightHeart.constant    = self.view.bounds.height * 0.1
         heightNameSong.constant = self.view.bounds.height * 0.05
-        //buttonPlay.setBackgroundImage(UIImage(named:"play"), for: .normal)
         play = false
         buttonPlay.backgroundColor = UIColor.clear
         
@@ -91,10 +94,14 @@ class ViewController: UIViewController {
         slider.widthAnchor.constraint(equalToConstant: soundLeftConstraint.constant + heightSoundImage.constant + sliderToSound.constant)
         
         //menu
+        self.menuView.layer.cornerRadius = 4
         leadingMenu.constant = -self.view.bounds.width
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(self.respondToSwipeGestureForMenuView))
         swipeLeft.direction = UISwipeGestureRecognizerDirection.left
         self.menuView.addGestureRecognizer(swipeLeft)
+        self.menuView.layer.shadowColor = UIColor.white.cgColor
+        self.menuView.layer.shadowRadius = 20
+        self.menuView.layer.shadowOpacity = 0.5
         
         
         
@@ -106,32 +113,25 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setConstraints()
         
-        
         UIApplication.shared.statusBarStyle = .lightContent
         navigationController?.navigationBar.barTintColor = UIColor.black
         self.view.backgroundColor = UIColor.black
         
-        var url = "http://pl.radiosolyanka.in.ua:8000/play"
+        let url = "http://pl.radiosolyanka.in.ua:8000/play"
         
         let playerItem = AVPlayerItem(url: NSURL(string:url) as! URL)
         player = AVPlayer(playerItem: playerItem)
         player.volume = 0.8
         player.pause()
         
-        
-        
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         sound.isUserInteractionEnabled = true
         sound.addGestureRecognizer(tapGestureRecognizer)
         
-        
-        
         if (player.rate != 0 && player.error == nil) {
             print("playing")
-        }
-        else
-        {
-            print("error",player.error)
+        } else {
+            print("error",player.error ?? "")
         }
         
         var param1 = WCLShineParams()
@@ -181,8 +181,7 @@ class ViewController: UIViewController {
     }
 
     
-    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
-    {
+    func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         //let tappedImage = tapGestureRecognizer.view as! UIImageView
         self.soundOff = !self.soundOff
         if !soundOff {
@@ -194,54 +193,36 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func OpenMenu(_ sender: UIBarButtonItem) {
-        openCloseMenu()
+        if self.menuOpen {
+            closeMenu()
+        } else {
+            openMenu()
+        }
     }
     
-    func openCloseMenu() {
-        //DispatchQueue.main.async(execute: {
-                if self.menuOpen {
-                    self.leadingMenu.constant = -self.menuView.frame.width
-                    UIView.animate(withDuration: 0.5, animations: {
-                        self.view.layoutIfNeeded()
-                    })
-                } else {
-                    self.leadingMenu.constant = 0
-                    UIView.animate(withDuration: 1, animations: {
-                        self.view.layoutIfNeeded()
-                    })
-                }
-                self.menuOpen = !self.menuOpen
-            //})
-        }
-    func openMenu()
-    {
+    func openMenu() {
         self.leadingMenu.constant = 0
-        UIView.animate(withDuration: 1, animations: {
+        UIView.animate(withDuration: 0.7, animations: {
             self.view.layoutIfNeeded()
             self.menuOpen = !self.menuOpen
         })
-
     }
     
     func closeMenu() {
         self.leadingMenu.constant = -self.menuView.frame.width
-        UIView.animate(withDuration: 0.5, animations: {
+        UIView.animate(withDuration: 0.3, animations: {
             self.view.layoutIfNeeded()
             self.menuOpen = !self.menuOpen
         })
     }
-    
-    
     
     func respondToSwipeGestureForMenuView(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.right: break
             case UISwipeGestureRecognizerDirection.down:  break
-            case UISwipeGestureRecognizerDirection.left:
-                closeMenu()
+            case UISwipeGestureRecognizerDirection.left:  closeMenu()
             case UISwipeGestureRecognizerDirection.up:    break
             default: break
             }
@@ -252,17 +233,19 @@ class ViewController: UIViewController {
     func respondToSwipeGestureForMainView(gesture: UIGestureRecognizer) {
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             switch swipeGesture.direction {
-            case UISwipeGestureRecognizerDirection.right:
-                openMenu()
-            case UISwipeGestureRecognizerDirection.down: break
-            case UISwipeGestureRecognizerDirection.left:
-                closeMenu()
-            case UISwipeGestureRecognizerDirection.up:   break
+            case UISwipeGestureRecognizerDirection.right: break//openMenu()
+            case UISwipeGestureRecognizerDirection.down:  break
+            case UISwipeGestureRecognizerDirection.left:  break//closeMenu()
+            case UISwipeGestureRecognizerDirection.up:    break
             default: break
             }
         }
     }
-
-   
+    
+    func handleTap(_ sender: UITapGestureRecognizer) {
+        if menuOpen {
+            closeMenu()
+        }
+    }
     
 }
