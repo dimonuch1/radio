@@ -15,6 +15,25 @@ import WCLShineButton
 
 class ViewController: UIViewController {
 
+//MARK: - Structs screen size
+    
+    struct ScreenSize
+    {
+        static let SCREEN_WIDTH         = UIScreen.main.bounds.size.width
+        static let SCREEN_HEIGHT        = UIScreen.main.bounds.size.height
+        static let SCREEN_MAX_LENGTH    = max(ScreenSize.SCREEN_WIDTH, ScreenSize.SCREEN_HEIGHT)
+        static let SCREEN_MIN_LENGTH    = min(ScreenSize.SCREEN_WIDTH, ScreenSize.SCREEN_HEIGHT)
+    }
+    
+    struct DeviceType
+    {
+        static let IS_IPHONE_4_OR_LESS  = UIDevice.current.userInterfaceIdiom == .phone && ScreenSize.SCREEN_MAX_LENGTH < 568.0
+        static let IS_IPHONE_5          = UIDevice.current.userInterfaceIdiom == .phone && ScreenSize.SCREEN_MAX_LENGTH == 568.0
+        static let IS_IPHONE_6_7        = UIDevice.current.userInterfaceIdiom == .phone && ScreenSize.SCREEN_MAX_LENGTH == 667.0
+        static let IS_IPHONE_6P_7P      = UIDevice.current.userInterfaceIdiom == .phone && ScreenSize.SCREEN_MAX_LENGTH == 736.0
+        static let IS_IPAD              = UIDevice.current.userInterfaceIdiom == .pad && ScreenSize.SCREEN_MAX_LENGTH   == 1024.0
+        static let IS_IPAD_PRO          = UIDevice.current.userInterfaceIdiom == .pad && ScreenSize.SCREEN_MAX_LENGTH   == 1366.0
+    }
     
 //MARK: - Constraints
     
@@ -44,6 +63,10 @@ class ViewController: UIViewController {
             
         }
     }
+    
+//buttons form menu
+    
+    @IBOutlet var buttonsFormMenu: [UIButton]!
     
 //menu constraint
     
@@ -80,8 +103,6 @@ class ViewController: UIViewController {
         //tap.delegate = self.view as! UIGestureRecognizerDelegate?
         //self.view.addGestureRecognizer(tap)
         
-        
-        
         //other
         heightHeart.constant    = self.view.bounds.height * 0.1
         heightNameSong.constant = self.view.bounds.height * 0.05
@@ -103,8 +124,6 @@ class ViewController: UIViewController {
         self.menuView.layer.shadowRadius = 20
         self.menuView.layer.shadowOpacity = 0.5
         
-        
-        
         view.layoutIfNeeded()
         view.setNeedsLayout()
     }
@@ -112,6 +131,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setConstraints()
+        
+        identifySizeScreen()
         
         UIApplication.shared.statusBarStyle = .lightContent
         navigationController?.navigationBar.barTintColor = UIColor.black
@@ -187,9 +208,11 @@ class ViewController: UIViewController {
         if !soundOff {
             self.sound.image = UIImage(named: "nosound")
             slider.value = 0
+            player.volume = 0
         } else {
             self.sound.image = UIImage(named: "sound")
             slider.value = 0.8
+            player.volume = 0.8
         }
     }
     
@@ -203,7 +226,7 @@ class ViewController: UIViewController {
     
     func openMenu() {
         self.leadingMenu.constant = 0
-        UIView.animate(withDuration: 0.7, animations: {
+        UIView.animate(withDuration: 0.5, animations: {
             self.view.layoutIfNeeded()
             self.menuOpen = !self.menuOpen
         })
@@ -211,7 +234,7 @@ class ViewController: UIViewController {
     
     func closeMenu() {
         self.leadingMenu.constant = -self.menuView.frame.width
-        UIView.animate(withDuration: 0.3, animations: {
+        UIView.animate(withDuration: 0.2, animations: {
             self.view.layoutIfNeeded()
             self.menuOpen = !self.menuOpen
         })
@@ -245,6 +268,30 @@ class ViewController: UIViewController {
     func handleTap(_ sender: UITapGestureRecognizer) {
         if menuOpen {
             closeMenu()
+        }
+    }
+
+    
+//MARK: - Buttons font size
+    
+    func identifySizeScreen() {
+        
+        if DeviceType.IS_IPHONE_4_OR_LESS {
+            setButtonsFontSize(14.0)
+        } else if DeviceType.IS_IPHONE_5 {
+            setButtonsFontSize(16.0)
+        } else if DeviceType.IS_IPHONE_6_7 {
+            setButtonsFontSize(18.0)
+        } else if DeviceType.IS_IPHONE_6P_7P {
+            setButtonsFontSize(20.0)
+        } else {
+            setButtonsFontSize(22.0)
+        }
+    }
+    
+    func setButtonsFontSize(_ font:CGFloat) {
+        for button in buttonsFormMenu {
+            button.titleLabel?.font = UIFont(name: (button.titleLabel?.font.fontName)!, size: font)
         }
     }
     
