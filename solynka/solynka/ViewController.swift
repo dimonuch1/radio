@@ -16,6 +16,8 @@ import WCLShineButton
 class ViewController: UIViewController {
 
 //MARK: - Structs screen size
+
+    //изменения для commit number one
     
     struct ScreenSize
     {
