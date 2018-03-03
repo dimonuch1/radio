@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FDA0EDDDFEB2880A292130BEDBCD44B /* Pods-solynka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB7DC7A8B14F17F026DEEFB440FBCEC /* Pods-solynka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FDA0EDDDFEB2880A292130BEDBCD44B /* Pods-solynka-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99AD363E5B69AE0028C90D7FA126CC62 /* Pods-solynka-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		141CAA36841D59DD5608C80F34FC4241 /* WCLShineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DEA29E3D64B0C8E81F3CD09FD47030 /* WCLShineButton.swift */; };
 		469097AFDC173B2D21B697115401C041 /* WCLShineClickLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0F19B124AA8DD0FEB11F449D95DFC7 /* WCLShineClickLayer.swift */; };
 		46FF7EB3B3C9A1D823947ED057FC71C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		4F766E38AACFEC5DFC1A7E38B043039B /* WCLShineButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C05E7EC7A9EE362DA4D7D0CAC38A2C4 /* WCLShineButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F766E38AACFEC5DFC1A7E38B043039B /* WCLShineButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75C6A249F9A975129DCB9A12D2A5F1A3 /* WCLShineButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502E8222C029C590BB16727DE9A3B1D7 /* WCLShineParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA215094CFB3ED315802437295F2DD8D /* WCLShineParams.swift */; };
-		5218D83DFA773CF5D8514E22AA5ADD9F /* Pods-solynka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F6162020B88143F45D69DD327465957D /* Pods-solynka-dummy.m */; };
+		5218D83DFA773CF5D8514E22AA5ADD9F /* Pods-solynka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E51259EF5B84E6F2AFFE14DD85CA5ED /* Pods-solynka-dummy.m */; };
 		5A21887BDC993162A75C01CEA3A71F6F /* WCLShineBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD5C0BC7C5F0F151D48A5CCA68A2011 /* WCLShineBundle.swift */; };
-		5D5E47558B8EFA799FC9B557A1897307 /* WCLShineButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A353C37E3C62A267082E080BE0B5E2 /* WCLShineButton-dummy.m */; };
+		5D5E47558B8EFA799FC9B557A1897307 /* WCLShineButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B71A3135117D59A54777578527EA2C9F /* WCLShineButton-dummy.m */; };
 		724CE49CDACBC8D0F08327A47E34124E /* WCLShineLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201ADAAFD19A7D66992BC912A1D0B629 /* WCLShineLayer.swift */; };
 		81DBE155F107C320F1B5A9F3469CE8EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		C49FFA4E0CD4E5C987B7CE2B5EE1BAFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
@@ -34,34 +34,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019478A2BF6A3CF9712E81E962CD4BBF /* Pods-solynka-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-solynka-resources.sh"; sourceTree = "<group>"; };
 		03DEA29E3D64B0C8E81F3CD09FD47030 /* WCLShineButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineButton.swift; path = WCLShineButton/WCLShineButton.swift; sourceTree = "<group>"; };
+		130D2186991DC32A85927CD7E0F497FE /* WCLShineButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-prefix.pch"; sourceTree = "<group>"; };
 		1F23602D5BBC1B904D39BD8BC60AA6A0 /* Pods_solynka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_solynka.framework; path = "Pods-solynka.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		201ADAAFD19A7D66992BC912A1D0B629 /* WCLShineLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineLayer.swift; path = WCLShineButton/WCLShineLayer.swift; sourceTree = "<group>"; };
+		24FF723366EE5827EB14C5F9E63B273E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B0F19B124AA8DD0FEB11F449D95DFC7 /* WCLShineClickLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineClickLayer.swift; path = WCLShineButton/WCLShineClickLayer.swift; sourceTree = "<group>"; };
-		3647D161F2DA543F2F345985A957E271 /* Pods-solynka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-solynka.release.xcconfig"; sourceTree = "<group>"; };
-		38277ACE0F4B3946E4DC970A7F40816E /* Pods-solynka-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-solynka-resources.sh"; sourceTree = "<group>"; };
-		4C05E7EC7A9EE362DA4D7D0CAC38A2C4 /* WCLShineButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-umbrella.h"; sourceTree = "<group>"; };
-		4F35031154867AA4003DF78614628DFA /* Pods-solynka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-solynka.modulemap"; sourceTree = "<group>"; };
+		4F16161B7DD47B59E8E4DADBA3FC5D18 /* Pods-solynka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-solynka.debug.xcconfig"; sourceTree = "<group>"; };
 		56B7DB67C1FB498DE1787A15C01872EE /* WCLShineButton.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WCLShineButton.bundle; path = WCLShineButton/WCLShineButton.bundle; sourceTree = "<group>"; };
-		57009257DDCE0EE12C928804E909B99A /* WCLShineButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCLShineButton.xcconfig; sourceTree = "<group>"; };
-		58B61DFCAC4F7C0A5EAB912D1E1B3114 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		58C45BEB8881F7E643A032619CA29D7D /* Pods-solynka-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-solynka-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5F461A6CDB053F31AAB2E9CCE417D51E /* WCLShineButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = WCLShineButton.modulemap; sourceTree = "<group>"; };
-		7F77CFD558074FB0C356543EB550C0DF /* Pods-solynka-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-solynka-frameworks.sh"; sourceTree = "<group>"; };
+		5BA40BBE056875FB9A83634173C87305 /* WCLShineButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WCLShineButton.xcconfig; sourceTree = "<group>"; };
+		5E51259EF5B84E6F2AFFE14DD85CA5ED /* Pods-solynka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-solynka-dummy.m"; sourceTree = "<group>"; };
+		689BF5537086177503A8671DFA2257D1 /* Pods-solynka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-solynka.modulemap"; sourceTree = "<group>"; };
+		75C6A249F9A975129DCB9A12D2A5F1A3 /* WCLShineButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-umbrella.h"; sourceTree = "<group>"; };
+		79B73C50676CEBB463971E0F9AFC23DE /* Pods-solynka-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-solynka-acknowledgements.plist"; sourceTree = "<group>"; };
+		893184171BE3D8D3FF328213994EF6D6 /* Pods-solynka-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-solynka-frameworks.sh"; sourceTree = "<group>"; };
 		898BF45DB7C0897F50AD25CF9CB3C34A /* WCLShineButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = WCLShineButton.framework; path = WCLShineButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8FB7DC7A8B14F17F026DEEFB440FBCEC /* Pods-solynka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-solynka-umbrella.h"; sourceTree = "<group>"; };
+		8D353D9E0335D37B645D94AC6C2A6A5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99AD363E5B69AE0028C90D7FA126CC62 /* Pods-solynka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-solynka-umbrella.h"; sourceTree = "<group>"; };
+		9CBB1A358E70774A4431B339217A50A1 /* Pods-solynka-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-solynka-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9CD5C0BC7C5F0F151D48A5CCA68A2011 /* WCLShineBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineBundle.swift; path = WCLShineButton/WCLShineBundle.swift; sourceTree = "<group>"; };
-		9E124C136EA7F0D50DF08B9C2104DB69 /* WCLShineButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WCLShineButton-prefix.pch"; sourceTree = "<group>"; };
 		A6C1F4D0904F316C18E8EF8FDBE89F12 /* WCLShineAngleLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineAngleLayer.swift; path = WCLShineButton/WCLShineAngleLayer.swift; sourceTree = "<group>"; };
 		AA215094CFB3ED315802437295F2DD8D /* WCLShineParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WCLShineParams.swift; path = WCLShineButton/WCLShineParams.swift; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B7A353C37E3C62A267082E080BE0B5E2 /* WCLShineButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCLShineButton-dummy.m"; sourceTree = "<group>"; };
-		D5C3FBABDE16690BD8A2B48903460524 /* Pods-solynka-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-solynka-acknowledgements.plist"; sourceTree = "<group>"; };
+		B71A3135117D59A54777578527EA2C9F /* WCLShineButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WCLShineButton-dummy.m"; sourceTree = "<group>"; };
+		CAD01007411FCC06E6C4D6A83A4D83C3 /* Pods-solynka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-solynka.release.xcconfig"; sourceTree = "<group>"; };
+		D18235D9DAE2F7470E402DF8087F630C /* WCLShineButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WCLShineButton.modulemap; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E986AA61A1BBD0D1FF540DD5DB70DC30 /* Pods-solynka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-solynka.debug.xcconfig"; sourceTree = "<group>"; };
-		F6162020B88143F45D69DD327465957D /* Pods-solynka-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-solynka-dummy.m"; sourceTree = "<group>"; };
-		F6DF5E8AD8DDC6872BC310A8A3F6DFE6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		25DA6051B83D4E2733956130E7698D00 /* Pods-solynka */ = {
+			isa = PBXGroup;
+			children = (
+				24FF723366EE5827EB14C5F9E63B273E /* Info.plist */,
+				689BF5537086177503A8671DFA2257D1 /* Pods-solynka.modulemap */,
+				9CBB1A358E70774A4431B339217A50A1 /* Pods-solynka-acknowledgements.markdown */,
+				79B73C50676CEBB463971E0F9AFC23DE /* Pods-solynka-acknowledgements.plist */,
+				5E51259EF5B84E6F2AFFE14DD85CA5ED /* Pods-solynka-dummy.m */,
+				893184171BE3D8D3FF328213994EF6D6 /* Pods-solynka-frameworks.sh */,
+				019478A2BF6A3CF9712E81E962CD4BBF /* Pods-solynka-resources.sh */,
+				99AD363E5B69AE0028C90D7FA126CC62 /* Pods-solynka-umbrella.h */,
+				4F16161B7DD47B59E8E4DADBA3FC5D18 /* Pods-solynka.debug.xcconfig */,
+				CAD01007411FCC06E6C4D6A83A4D83C3 /* Pods-solynka.release.xcconfig */,
+			);
+			name = "Pods-solynka";
+			path = "Target Support Files/Pods-solynka";
+			sourceTree = "<group>";
+		};
+		3584872EDDD5617CE4622DE9AC2DE564 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D353D9E0335D37B645D94AC6C2A6A5C /* Info.plist */,
+				D18235D9DAE2F7470E402DF8087F630C /* WCLShineButton.modulemap */,
+				5BA40BBE056875FB9A83634173C87305 /* WCLShineButton.xcconfig */,
+				B71A3135117D59A54777578527EA2C9F /* WCLShineButton-dummy.m */,
+				130D2186991DC32A85927CD7E0F497FE /* WCLShineButton-prefix.pch */,
+				75C6A249F9A975129DCB9A12D2A5F1A3 /* WCLShineButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WCLShineButton";
+			sourceTree = "<group>";
+		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,24 +142,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7155CD7A902EC7C4449D81343440725F /* Pods-solynka */ = {
-			isa = PBXGroup;
-			children = (
-				F6DF5E8AD8DDC6872BC310A8A3F6DFE6 /* Info.plist */,
-				4F35031154867AA4003DF78614628DFA /* Pods-solynka.modulemap */,
-				58C45BEB8881F7E643A032619CA29D7D /* Pods-solynka-acknowledgements.markdown */,
-				D5C3FBABDE16690BD8A2B48903460524 /* Pods-solynka-acknowledgements.plist */,
-				F6162020B88143F45D69DD327465957D /* Pods-solynka-dummy.m */,
-				7F77CFD558074FB0C356543EB550C0DF /* Pods-solynka-frameworks.sh */,
-				38277ACE0F4B3946E4DC970A7F40816E /* Pods-solynka-resources.sh */,
-				8FB7DC7A8B14F17F026DEEFB440FBCEC /* Pods-solynka-umbrella.h */,
-				E986AA61A1BBD0D1FF540DD5DB70DC30 /* Pods-solynka.debug.xcconfig */,
-				3647D161F2DA543F2F345985A957E271 /* Pods-solynka.release.xcconfig */,
-			);
-			name = "Pods-solynka";
-			path = "Target Support Files/Pods-solynka";
-			sourceTree = "<group>";
-		};
 		791A929244EB551340289EE61419AE98 /* WCLShineButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,7 +152,7 @@
 				201ADAAFD19A7D66992BC912A1D0B629 /* WCLShineLayer.swift */,
 				AA215094CFB3ED315802437295F2DD8D /* WCLShineParams.swift */,
 				93AEFC59452934B02EA94946E0AC8F78 /* Resources */,
-				E0FC48C3C7FBF95444AA800F292ED162 /* Support Files */,
+				3584872EDDD5617CE4622DE9AC2DE564 /* Support Files */,
 			);
 			name = WCLShineButton;
 			path = WCLShineButton;
@@ -167,7 +181,7 @@
 		860B078E6E042E7C2B3E181CAFC254A1 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7155CD7A902EC7C4449D81343440725F /* Pods-solynka */,
+				25DA6051B83D4E2733956130E7698D00 /* Pods-solynka */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -178,20 +192,6 @@
 				56B7DB67C1FB498DE1787A15C01872EE /* WCLShineButton.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		E0FC48C3C7FBF95444AA800F292ED162 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				58B61DFCAC4F7C0A5EAB912D1E1B3114 /* Info.plist */,
-				5F461A6CDB053F31AAB2E9CCE417D51E /* WCLShineButton.modulemap */,
-				57009257DDCE0EE12C928804E909B99A /* WCLShineButton.xcconfig */,
-				B7A353C37E3C62A267082E080BE0B5E2 /* WCLShineButton-dummy.m */,
-				9E124C136EA7F0D50DF08B9C2104DB69 /* WCLShineButton-prefix.pch */,
-				4C05E7EC7A9EE362DA4D7D0CAC38A2C4 /* WCLShineButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/WCLShineButton";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +258,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -325,29 +325,25 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1FA08BCACAC522DD3334A986B3A6ECEA /* Release */ = {
+		1986F4B272E2CCD4F7ACA7B2C5D14949 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57009257DDCE0EE12C928804E909B99A /* WCLShineButton.xcconfig */;
+			baseConfigurationReference = 5BA40BBE056875FB9A83634173C87305 /* WCLShineButton.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/WCLShineButton/WCLShineButton-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/WCLShineButton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/WCLShineButton/WCLShineButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = WCLShineButton;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -355,213 +351,231 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		83A6E10C89E72F3399C22A07E7958C0B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E986AA61A1BBD0D1FF540DD5DB70DC30 /* Pods-solynka.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-solynka/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-solynka/Pods-solynka.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_solynka;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */ = {
+		52963673ADAB30EC57625F006D328D81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		B98862BA87D6D416F8295F8D966401A1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57009257DDCE0EE12C928804E909B99A /* WCLShineButton.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/WCLShineButton/WCLShineButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/WCLShineButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/WCLShineButton/WCLShineButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = WCLShineButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D6DC9F288DA41C3F0F35724A2FE83672 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3647D161F2DA543F2F345985A957E271 /* Pods-solynka.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-solynka/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-solynka/Pods-solynka.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_solynka;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FC8212A50BC1BCA4BF1B8BC800078F2F /* Debug */ = {
+		5E66EDB50E7D107AAADE0DF38AF04C92 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B958D210D374C50A89C48C1AEE40BAA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BA40BBE056875FB9A83634173C87305 /* WCLShineButton.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WCLShineButton/WCLShineButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WCLShineButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WCLShineButton/WCLShineButton.modulemap";
+				PRODUCT_NAME = WCLShineButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D584BA2C3454BBBE12680BE1C92B8721 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD01007411FCC06E6C4D6A83A4D83C3 /* Pods-solynka.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-solynka/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-solynka/Pods-solynka.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_solynka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E577DD8B260FC1F6F4D6F5297D9D9D27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F16161B7DD47B59E8E4DADBA3FC5D18 /* Pods-solynka.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-solynka/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-solynka/Pods-solynka.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_solynka;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -571,8 +585,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FC8212A50BC1BCA4BF1B8BC800078F2F /* Debug */,
-				AA0B5BDEB018901CD8F88AAD05F5B893 /* Release */,
+				5E66EDB50E7D107AAADE0DF38AF04C92 /* Debug */,
+				52963673ADAB30EC57625F006D328D81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -580,8 +594,8 @@
 		A6E24F26E3F81AF5305387A232E67357 /* Build configuration list for PBXNativeTarget "WCLShineButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B98862BA87D6D416F8295F8D966401A1 /* Debug */,
-				1FA08BCACAC522DD3334A986B3A6ECEA /* Release */,
+				B958D210D374C50A89C48C1AEE40BAA4 /* Debug */,
+				1986F4B272E2CCD4F7ACA7B2C5D14949 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -589,8 +603,8 @@
 		E92DCA5C49B86A192FA3B9BFA0DA4424 /* Build configuration list for PBXNativeTarget "Pods-solynka" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				83A6E10C89E72F3399C22A07E7958C0B /* Debug */,
-				D6DC9F288DA41C3F0F35724A2FE83672 /* Release */,
+				E577DD8B260FC1F6F4D6F5297D9D9D27 /* Debug */,
+				D584BA2C3454BBBE12680BE1C92B8721 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

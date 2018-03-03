@@ -18,6 +18,8 @@ class ViewController: UIViewController {
 //MARK: - Structs screen size
 
     //изменения для commit number one
+
+    //изменения для commit number two
     
     struct ScreenSize
     {
