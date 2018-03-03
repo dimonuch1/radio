@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     //изменения для commit number one
 
     //изменения для commit number two
+
+    //изменения для commit number three
     
     struct ScreenSize
     {
@@ -137,7 +139,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setConstraints()
-        
+
+        //view did laod
+
+        //abrakadabra
+
+        //somesing//email
+
         identifySizeScreen()
         
         UIApplication.shared.statusBarStyle = .lightContent
