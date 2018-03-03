@@ -144,6 +144,8 @@ class ViewController: UIViewController {
 
         //abrakadabra
 
+        //-L
+
         identifySizeScreen()
         
         UIApplication.shared.statusBarStyle = .lightContent
