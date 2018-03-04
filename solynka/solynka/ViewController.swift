@@ -146,6 +146,8 @@ class ViewController: UIViewController {
 
         //somesing//email
 
+        //test2 some code for commit
+
         identifySizeScreen()
         
         UIApplication.shared.statusBarStyle = .lightContent
